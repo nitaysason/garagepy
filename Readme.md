@@ -4,7 +4,7 @@
     Add - Done
     Print - Done
     Exit - Done
-    Delete
+    Delete - Done
     Edit - Done
     Save data to file-Done 
     Load data from a file- Done
