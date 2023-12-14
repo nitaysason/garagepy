@@ -3,7 +3,7 @@ import os
 
 
 Garage = []
-MY_DATA = 'output.txt'
+MY_DATA = 'garage.txt'
 
    
 def load_data():

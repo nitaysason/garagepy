@@ -1,1 +1,0 @@
-[{"color": "red", "model": "2000", "brand": "volvo"}, {"color": "blue", "model": "2600", "brand": "kya"}]
