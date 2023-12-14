@@ -1,6 +1,6 @@
 import json
 import os
-
+from helper_zoo import menu
 
 zoo = []
 MY_DATA = 'zoo.txt'
@@ -64,12 +64,6 @@ def do_menu_actions(userSelection):
 
     
 
-def menu():
-    print("p - print all animals")
-    print("x - exit")
-    print("d - delete")
-    print("a - add a animal")
-    print("e - edit the animal")
 
 
 def main():

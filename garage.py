@@ -1,6 +1,6 @@
 import json
 import os
-
+from helper_garage import menu
 
 Garage = []
 MY_DATA = 'garage.txt'
@@ -60,17 +60,6 @@ def do_menu_actions(userSelection):
             print(Garage)  # רשימת המכוניות לאחר המחיקה
         else:
             print("Invalid index. No car has been deleted.")
-
-
-    
-
-def menu():
-    print("p - print all cars")
-    print("x - exit")
-    print("d - delete")
-    print("a - add a car")
-    print("e - edit the car")
-
 
 def main():
     load_data() 
