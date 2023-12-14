@@ -50,7 +50,7 @@ def do_menu_actions(userSelection):
 
         car_index = int(input("Enter the index of the car you want to delete: "))
         if 0 <= car_index < len(Garage):
-        # מדפיס את פרטי המכונית שימומשת
+        # מדפיס את פרטי המכונית הנמחקת
             print(f"Deleting car: {Garage[car_index]}")
 
         # מחיקת המכונית מרשימת המכוניות
