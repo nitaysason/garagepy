@@ -17,7 +17,7 @@ def save_2_file():
 
 
 def do_menu_actions(userSelection):
-    if userSelection == 'x': # when closing the applicaion
+    if userSelection == 'x':
         save_2_file()
         print("bye bye")
         exit()
@@ -26,38 +26,38 @@ def do_menu_actions(userSelection):
     elif userSelection == 'e':   
  
         print("Edit existing animal:")
-        print(zoo)  # רשימת המכוניות בג'ראג'
+        print(zoo) 
 
         anim_index = int(input("Enter the index of the animal you want to edit: "))
         if 0 <= anim_index < len(zoo):
-        # מדפיס את פרטי המכונית הנוכחית
+      
             print(f"Current details: {zoo[anim_index]}")
 
-        # שינוי פרטי המכונית
+        
             zoo[anim_index]["color"] = input("Enter new color: ")
             zoo[anim_index]["age"] = input("Enter new age: ")
             zoo[anim_index]["animal"] = input("Enter new animal: ")
 
             print(f"Car at index {anim_index} has been updated.")
-            print(zoo)  # רשימת המכוניות לאחר העדכון
+            print(zoo) 
         else:
             print("Invalid index. No animal has been edited.")
     elif userSelection == 'd': 
      
 
         print("Delete existing animal:")
-        print(zoo)  # רשימת המכוניות בג'ראג'
+        print(zoo)  
 
         anim_index = int(input("Enter the index of the animal you want to delete: "))
         if 0 <= anim_index < len(zoo):
-        # מדפיס את פרטי המכונית שימומשת
+        
             print(f"Deleting animal: {zoo[anim_index]}")
 
-        # מחיקת המכונית מרשימת המכוניות
+        
             deleted_animal = zoo.pop(anim_index)
 
             print(f"animal at index {anim_index} has been deleted: {deleted_animal}")
-            print(zoo)  # רשימת המכוניות לאחר המחיקה
+            print(zoo)  
         else:
             print("Invalid index. No animal has been deleted.")
 
@@ -77,7 +77,7 @@ def main():
     while True:
         menu()
         userSelection = input("please select action")
-        os.system('cls' if os.name == 'nt' else 'clear') #clear terminal
+        os.system('cls' if os.name == 'nt' else 'clear') 
         do_menu_actions(userSelection)
         
 
